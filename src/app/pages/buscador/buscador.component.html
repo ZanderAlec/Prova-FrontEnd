@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center ">
+    <div class="px-4 pt-2 card-container ">
+        <div class="card-header mb-3 rounded">
+            <h2 class="card-title">Busca frequência por nome</h2>
+        </div>
+    
+        <div class="mb-4 me-4">
+            <label for="nome" class="form-label text-secondary">Nome</label>
+            <input #nomeInput type="text" id="nome" class="form-control  mb-5" [(ngModel)]="nome">
+    
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-danger me-4" (click) = "limpaInput()">Cancelar</button>
+                <button type="button" class="btn btn-primary " (click) = "enviaValor()" >Buscar</button>
+            </div>
+        </div>
+    </div>
+</div>

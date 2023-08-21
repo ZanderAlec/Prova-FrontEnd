@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --dark-blue: rgb(0,31,84);
+    --light-grey: rgb(233,236,239);
+}
+
+.card-container{
+    display: inline-block;
+    width: max(50vw, 30rem);
+}
+
+.card-header{
+    background-color: var(--dark-blue);
+    padding: 0.4rem 2rem;
+}
+
+.card-title{
+    color: white;
+    font-size: 1.5rem;
+}

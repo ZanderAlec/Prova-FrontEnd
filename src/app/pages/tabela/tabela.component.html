@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center ">
+    <div class=" px-4 pt-2 card-container">
+        <div class="card-header mb-3 d-flex rounded">
+            <button type="  " class="btn btn-sm return-btn" [routerLink] = "['']">
+                <i class="bi bi-arrow-left"></i>
+            </button>
+            <h2 class="card-title">Frequência por {{nome}} </h2>
+        </div>
+    
+        <div class="mb-4 mx-4">
+            <table class="table table-light table-striped border-top-color">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Classe</th>
+                        <th>Frequência</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr *ngFor="let valor of data; let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{valor.periodo}}</td>
+                        <td>{{valor.frequencia}}</td>
+                    </tr>
+    
+                    
+                </tbody>
+    
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th></th>
+                        <th>{{total}}</th>
+                    </tr>
+                </tfoot>
+                
+            </table>
+        </div>
+    </div>
+</div>
+
